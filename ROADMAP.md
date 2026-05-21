@@ -56,16 +56,32 @@ Goal: discoverable, "turn your dead Kindle into a dashboard."
 ## Creative module backlog (pick à la carte)
 
 Daily-rotating or interactive pieces, all ASCII / text so they render on
-e-ink. See the menu in chat — these are the candidates:
+e-ink. Pick what to build next.
 
-- Daily generative ASCII art, seeded by the date (unique pattern each day)
-- Wind compass rose (ASCII)
-- Sunrise → sunset arc with the sun's current position marked
-- "On this day" — one history line
-- Word of the day + etymology
-- Visible planets tonight / stargazing line
-- Second weather location (two places at once)
-- Tap the poem to cycle: full → original only → translation only → fullscreen
+### Interactivity options (tap zones — e-ink, no hover)
+
+- Tap left / right of the quote → prev / next quote
+- Tap the weather block → expand to 3-day forecast
+- Tap the poem → cycle full / original-only / translation-only / fullscreen
+- Tap a corner → hard refresh
+- Tap the date → see another day's quote + poem
+
+### Visual / content modules
+
+- **A** — ASCII weather glyphs (drawn sun/cloud/rain, picked from WMO code)
+- **B** — Real moon phase, ASCII (pure date math, no API)
+- **C** — Temperature sparkline `▁▂▃▄▅▆▇` for next 12h (data already fetched)
+- **D** — Wind compass rose (ASCII)
+- **E** — Sunrise → sunset arc with the sun's current position marked
+- **F** — Daily generative ASCII art, seeded by the date (unique each day)
+- **G** — "On this day" — one history line
+- **H** — Word of the day + etymology
+- **I** — Visible planets tonight / stargazing line
+- **J** — Second weather location (two places at once)
+
+**Suggested first pass:** A + B + C + tap-to-cycle quotes — biggest
+"feels alive + looks nice" jump, all doable in the one file with data
+already fetched.
 
 ## Open questions
 
